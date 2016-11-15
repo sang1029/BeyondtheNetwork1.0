@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sdk.beyondthenetwork10" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Emergency"
+            android:label="@string/title_activity_emergency"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Message"
+            android:label="@string/title_activity_message"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Information"
+            android:label="@string/title_activity_information"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".message_person"
+            android:label="@string/title_activity_message_person"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".message_nearby"
+            android:label="@string/title_activity_message_nearby"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".view_info"
+            android:label="@string/title_activity_view_info" >
+        </activity>
+        <activity
+            android:name=".View_info"
+            android:label="@string/title_activity_view_info" >
+        </activity>
+        <activity
+            android:name=".view_news"
+            android:label="@string/title_activity_view_news" >
+        </activity>
+    </application>
+
+</manifest>
