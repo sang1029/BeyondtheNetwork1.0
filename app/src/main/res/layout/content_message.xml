@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
-        android:text="My Contact List"/>
+        android:text="My Contact List:"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -62,16 +62,6 @@
         android:layout_alignParentStart="true"
         android:onClick="message_person"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Contact"
-        android:id="@+id/button10"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/button9"
-        android:layout_alignEnd="@+id/button9"
-        android:layout_marginBottom="77dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+
 
 </RelativeLayout>

@@ -22,14 +22,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:hint="Enter message"
+
             android:layout_weight="0.99" />
 
-        <Button
-            android:id="@+id/send_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+
+        <ImageButton
+            android:layout_width="76dp"
+            android:layout_height="47dp"
             android:layout_gravity="bottom"
-            android:hint="Send"/>
+
+            android:background="@drawable/send" />
 
     </LinearLayout>
 

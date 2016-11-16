@@ -20,7 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="75dp"
             android:background="@drawable/emergency"
-            android:onClick="emergency"/>
+            android:onClick="emergency"
+            />
 
         <ImageButton
             android:id="@+id/message"
@@ -36,7 +37,8 @@
             android:layout_height="75dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/information"
-            android:onClick="information"/>
+            android:onClick="information"
+            />
 
     </LinearLayout>
 </RelativeLayout>
