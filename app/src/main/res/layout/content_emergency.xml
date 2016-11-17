@@ -58,7 +58,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
-            android:text="Description:" />
+            android:text="State your emergency:" />
 
 
     </LinearLayout>
@@ -73,7 +73,7 @@
             android:layout_marginTop="150dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Describe situation"
+            android:hint="Describe your emergency"
             android:layout_weight="1"/>
 
 
@@ -91,8 +91,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send request"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="view_status"/>
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/msgstatus"
+            android:layout_marginTop="375dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Request sent Successfully\n\n"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 

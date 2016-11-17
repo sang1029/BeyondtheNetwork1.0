@@ -16,31 +16,58 @@
         android:orientation="vertical" >
 
 
-        <Button
+        <TextView
             android:id="@+id/emergency"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:onClick="view_info"
+            android:layout_height="30dp"
             android:text="Local News"
-
+            android:textSize="25dp"
             />
-
         <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News1"
+            android:onClick="view_news"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News1"
+            android:onClick="view_news"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News1"
+            android:onClick="view_news"/>
+
+
+
+
+        <TextView
             android:id="@+id/message"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginTop="50dp"
-            android:onClick="view_info"
-            android:text="Weather"/>
+            android:layout_height="30dp"
+            android:text="Weather"
+            android:textSize="25sp"/>
 
         <Button
-            android:id="@+id/information"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginTop="50dp"
-            android:onClick="view_info"
-            android:text="News"
-            />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="News2"
+            android:onClick="view_news"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News2"
+            android:onClick="view_news"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News2"
+            android:onClick="view_news"/>
+
+
 
     </LinearLayout>
 </RelativeLayout>

@@ -10,50 +10,51 @@
     tools:showIn="@layout/activity_message_nearby"
     tools:context="com.example.sdk.beyondthenetwork10.message_nearby">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adam"
-        android:id="@+id/button7"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mom"
-        android:id="@+id/button8"
-        android:layout_below="@+id/button7"
+        android:layout_height="50dp"
+        android:background="@drawable/aaron"
+        android:onClick="message_person"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/alisha"
         android:onClick="message_person"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/avery"
+        android:onClick="message_person"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/ben"
+        android:onClick="message_person"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/bonnie"
+        android:onClick="message_person"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dad"
-        android:id="@+id/button9"
-        android:layout_below="@+id/button8"
-        android:layout_alignRight="@+id/button8"
-        android:layout_alignEnd="@+id/button8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Contact"
-        android:id="@+id/button10"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/button9"
-        android:layout_alignEnd="@+id/button9"
-        android:layout_marginBottom="77dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 </RelativeLayout>
