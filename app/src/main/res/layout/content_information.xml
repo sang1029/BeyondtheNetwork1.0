@@ -26,18 +26,21 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News1"
+            android:textAllCaps="false"
+            android:text="Second earthquake will strike ..."
             android:onClick="view_news"
             android:layout_marginTop="5dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News1"
+            android:textAllCaps="false"
+            android:text="Communication network is damaged ..."
             android:onClick="view_news"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News1"
+            android:textAllCaps="false"
+            android:text="Locations of shelters"
             android:onClick="view_news"/>
 
 
@@ -54,17 +57,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="News2"
+            android:textAllCaps="false"
+            android:text="Raining Today"
             android:onClick="view_news"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News2"
+            android:textAllCaps="false"
+            android:text="expecting cloudy Tonight"
             android:onClick="view_news"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News2"
+            android:textAllCaps="false"
+            android:text="Sunny Tomorrow"
             android:onClick="view_news"/>
 
 
