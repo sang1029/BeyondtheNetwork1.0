@@ -15,14 +15,14 @@
         android:layout_height="wrap_content"
         android:fillViewport="true"
         android:id="@+id/scrollview1"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="50dp">
         <LinearLayout
             android:id="@+id/ll_msgperson"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="left">
 
+            android:orientation="vertical"
+            >
 
 
 
@@ -58,10 +58,12 @@
         android:layout_height="47dp"
         android:layout_gravity="bottom"
         android:onClick="send_msg"
-        android:background="@drawable/send"
+        android:background="@drawable/send2"
         android:layout_alignBottom="@+id/type_msg"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/imageButton2" />
+
+
 
 </RelativeLayout>

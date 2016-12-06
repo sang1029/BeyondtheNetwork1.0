@@ -18,9 +18,9 @@ public class View_info extends Activity {
         Button btn1 = (Button)findViewById(R.id.searchresult1);
         Button btn2 = (Button)findViewById(R.id.searchresult2);
         Button btn3 = (Button)findViewById(R.id.searchresult3);
-        btn1.setText(line+" aasdlfkajsd;flaksdf");
-        btn2.setText(line+" sdfe");
-        btn3.setText(line+" asdf");
+        btn1.setText("this is search result for " + line);
+        btn2.setText("This is news about " + line);
+        btn3.setText("News: " + line + "!!");
     }
     public void view_news(View view){
         Intent intent = new Intent(this, view_news.class);

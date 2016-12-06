@@ -3,6 +3,8 @@ package com.example.sdk.beyondthenetwork10;
 import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -57,17 +59,38 @@ public class message_person extends AppCompatActivity {
                 //tv.setBackground(R);
                 //tv.setBackgroundResource(R.drawable.);
                 //tv.setWidth(100%);
-                tv.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+                //tv.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT, 1f));
                 //tv.setBackgroundResource(R.drawable.message_person);
-
+                LinearLayout.LayoutParams lparam = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
                 //tv.setBackground(R.drawable.message_person);
-                tv.setBackgroundResource(android.R.color.holo_blue_bright);
+                lparam.gravity=Gravity.RIGHT;
+                lparam.setMargins(0,0,0,20);
+
+
+                //tv.setBackgroundColor(getResources().getColor(R.color.white));
+                //tv.setBackgroundColor(Color.parseColor("#04cee3"));
+                tv.setTextColor(Color.parseColor("#000000"));
+                tv.setPadding(20,20,20,20);
+                tv.setTextSize(17);
+                GradientDrawable gd = new GradientDrawable();
+
+                gd.setShape(GradientDrawable.RECTANGLE);
+
+                gd.setStroke(5,Color.parseColor("#04cee3"));
+                gd.setColor(Color.parseColor("#04cee3"));
+
+                gd.setCornerRadius(15.0f);
+
+                tv.setBackground(gd);
                 //tv.setGravity(Gravity.RIGHT);
+                tv.setLayoutParams(lparam);
                 //LinearLayout.TEXT_ALIGNMENT_GRAVITY=0;
                 //RelativeLayout.LayoutParams lparam = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
-                ///lparam.addRule(RelativeLayout.ALIGN_PARENT_RIGHT, RelativeLayout.TRUE);
+                //lparam.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                //lparam.addRule(RelativeLayout.ALIGN_PARENT_END);
+                //lparam.addRule(RelativeLayout.TEXT)
                 //tv.setLayoutParams(lparam);
-                tv.setGravity(Gravity.RIGHT);
+                //tv.setGravity(Gravity.RIGHT);
                 tv.setText(p1.message.get(x));
                 ll_msg.addView(tv);
             }
@@ -101,16 +124,40 @@ public class message_person extends AppCompatActivity {
         //    showmsg.append(p1.message.get(ii));
         //}
         TextView tv = new TextView(this);
-        tv.setGravity(Gravity.RIGHT);
+        //tv.setGravity(Gravity.END);
+        LinearLayout.LayoutParams lparam = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+        //tv.setBackground(R.drawable.message_person);
+        lparam.gravity=Gravity.RIGHT;
+        lparam.setMargins(0, 0, 0, 20);
+
+
+        //tv.setBackgroundColor(getResources().getColor(R.color.white));
+        //tv.setBackgroundColor(Color.parseColor("#04cee3"));
+        tv.setTextColor(Color.parseColor("#000000"));
+        tv.setPadding(20, 20, 20, 20);
+        //tv.setGravity(Gravity.RIGHT);
+        tv.setLayoutParams(lparam);
         tv.setText(editmsg.getText().toString());
+        tv.setTextSize(17);
+        GradientDrawable gd = new GradientDrawable();
+
+        gd.setShape(GradientDrawable.RECTANGLE);
+
+        gd.setStroke(5, Color.parseColor("#04cee3"));
+        gd.setColor(Color.parseColor("#04cee3"));
+
+        gd.setCornerRadius(15.0f);
+
+        tv.setBackground(gd);
+
         ll_msg.addView(tv);
         //showmsg.append();
 
         //showmsg.append(((Person) i.getSerializableExtra("person")).message.get(0));
 
-        FileOutputStream fileout = null;
+        //FileOutputStream fileout = null;
         try {
-            OutputStreamWriter osw = new OutputStreamWriter(this.openFileOutput("test.txt", Context.MODE_PRIVATE));
+            OutputStreamWriter osw = new OutputStreamWriter(this.openFileOutput("test.txt", Context.MODE_APPEND));
             ///fileout = openFileOutput("text.txt", MODE_PRIVATE);
             //OutputStreamWriter outputWriter = new OutputStreamWriter(fileout);
             osw.write(editmsg.getText().toString() + "\n");
@@ -126,7 +173,7 @@ public class message_person extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
+        editmsg.setText("");
         //showmsg = (TextView)findViewById(R.id.message1);
         //p1.addmessage("AAAA");
 
