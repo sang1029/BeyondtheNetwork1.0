@@ -85,4 +85,11 @@ public class message_nearby extends AppCompatActivity {
         intent.putExtra("person", p);
         startActivity(intent);
     }
+
+
+
+    public void search(View view){
+        Intent intent = new Intent(this, search_person.class);
+        startActivity(intent);
+    }
 }

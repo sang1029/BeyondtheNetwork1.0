@@ -51,7 +51,6 @@
             android:layout_height="50dp"
 
             android:textAllCaps="false"
-            android:text="Second earthquake will strike ..."
             android:onClick="view_news"
             android:background="@drawable/news1"
             android:layout_marginTop="5dp"/>
@@ -60,10 +59,11 @@
             android:layout_height="50dp"
             android:textAllCaps="false"
             android:background="@drawable/news2"
-
+            android:layout_marginTop="2dp"
             android:onClick="view_news"/>
         <Button
             android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
             android:layout_height="50dp"
             android:textAllCaps="false"
             android:background="@drawable/news3"
@@ -94,12 +94,14 @@
             android:layout_height="50dp"
             android:textAllCaps="false"
             android:background="@drawable/weather2"
+            android:layout_marginTop="2dp"
             android:onClick="view_news"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textAllCaps="false"
             android:background="@drawable/weather3"
+            android:layout_marginTop="2dp"
             android:onClick="view_news"/>
 
 

@@ -9,20 +9,21 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_height="50dp"
+        android:background="@drawable/btn_big"
         android:id="@+id/searchresult1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+
         android:onClick="view_news"/>
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_height="50dp"
+        android:background="@drawable/btn_big"
         android:id="@+id/searchresult2"
         android:layout_below="@+id/searchresult1"
         android:layout_alignParentLeft="true"
@@ -30,18 +31,20 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:onClick="view_news"
+        android:layout_marginTop="10dp"
         />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_height="50dp"
+        android:background="@drawable/btn_big"
         android:id="@+id/searchresult3"
         android:layout_below="@+id/searchresult2"
         android:layout_alignRight="@+id/searchresult2"
         android:layout_alignEnd="@+id/searchresult2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
         android:onClick="view_news"/>
 
 </RelativeLayout>

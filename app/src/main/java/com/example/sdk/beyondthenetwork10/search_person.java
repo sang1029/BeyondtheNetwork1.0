@@ -1,35 +1,21 @@
 package com.example.sdk.beyondthenetwork10;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.app.Activity;
 import android.view.View;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
-public class Message extends AppCompatActivity {
+public class search_person extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_message);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
+        setContentView(R.layout.activity_search_person);
     }
 
     public void message_person(View view){
@@ -93,15 +79,4 @@ public class Message extends AppCompatActivity {
         intent.putExtra("person", p);
         startActivity(intent);
     }
-
-    public void search(View view){
-        Intent intent = new Intent(this, search_person.class);
-        startActivity(intent);
-    }
-
-    public void message_nearby(View view){
-        Intent intent = new Intent(this, message_nearby.class);
-        startActivity(intent);
-    }
-
 }

@@ -76,8 +76,8 @@ public class message_person extends AppCompatActivity {
 
                 gd.setShape(GradientDrawable.RECTANGLE);
 
-                gd.setStroke(5,Color.parseColor("#04cee3"));
-                gd.setColor(Color.parseColor("#04cee3"));
+                gd.setStroke(5,Color.parseColor("#77eaff"));
+                gd.setColor(Color.parseColor("#77eaff"));
 
                 gd.setCornerRadius(15.0f);
 
@@ -143,14 +143,47 @@ public class message_person extends AppCompatActivity {
 
         gd.setShape(GradientDrawable.RECTANGLE);
 
-        gd.setStroke(5, Color.parseColor("#04cee3"));
-        gd.setColor(Color.parseColor("#04cee3"));
+        gd.setStroke(5, Color.parseColor("#77eaff"));
+        gd.setColor(Color.parseColor("#77eaff"));
 
         gd.setCornerRadius(15.0f);
 
         tv.setBackground(gd);
 
         ll_msg.addView(tv);
+
+
+        TextView tv2 = new TextView(this);
+        //tv.setGravity(Gravity.END);
+        LinearLayout.LayoutParams lparam2 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+        //tv.setBackground(R.drawable.message_person);
+        lparam2.gravity=Gravity.LEFT;
+        lparam2.setMargins(0, 0, 0, 20);
+
+
+        //tv.setBackgroundColor(getResources().getColor(R.color.white));
+        //tv.setBackgroundColor(Color.parseColor("#04cee3"));
+        tv2.setTextColor(Color.parseColor("#000000"));
+        tv2.setPadding(20, 20, 20, 20);
+        //tv.setGravity(Gravity.RIGHT);
+        tv2.setLayoutParams(lparam2);
+        tv2.setText(editmsg.getText().toString());
+        tv2.setTextSize(17);
+        GradientDrawable gd2 = new GradientDrawable();
+
+        gd2.setShape(GradientDrawable.RECTANGLE);
+
+        gd2.setStroke(5, Color.parseColor("#ffff77"));
+        gd2.setColor(Color.parseColor("#ffff77"));
+
+        gd2.setCornerRadius(15.0f);
+
+        tv2.setBackground(gd2);
+        tv2.setText("Hello!");
+        ll_msg.addView(tv2);
+
+
+
         //showmsg.append();
 
         //showmsg.append(((Person) i.getSerializableExtra("person")).message.get(0));
